@@ -1,0 +1,41 @@
+.products
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 10px;
+    row-gap: 20px;
+}
+.btn
+{
+    font-size: 50px;
+    background-color: #f6f8fa;
+    margin-left: 10px;
+    color: black;
+    padding: 0.8rem;
+    display: inline-block;
+}
+.btn.active
+{
+   background-color: black;
+   color: white;
+}
+.sort
+{
+    display: flex;
+    justify-content: space-between;
+}
+.dropdown
+{
+    font-size: 20px;
+    outline: transparent;
+}
+@media (max-width:1200px) {
+    .products
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width:970px) {
+    
+}
