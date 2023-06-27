@@ -13,7 +13,7 @@ const Hero = (props) => {
         <p className={classes["para-text"]}>
           The e-commerce platform that cares<br></br>
           The e-commerce platform that you can trust<br></br>
-          An E-commerce platform that you can build livelihood from br
+          An E-commerce platform that you can build livelihood from <br />
         </p>
         <NavLink to="/products">
           {" "}
