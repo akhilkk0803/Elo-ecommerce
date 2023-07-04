@@ -141,6 +141,7 @@ const cart = createSlice({
       const index = state.cart.findIndex((el) => el.id === id);
       const item = state.cart[index];
       if (item.amount == 1) {
+        state.totalItem -= 1;
         state.cart.splice(index, 1);
         return;
       } else {
