@@ -23,3 +23,9 @@
 justify-content: space-between;
 gap: 100px;
 }
+@media (max-width:970px){
+  .images{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+}

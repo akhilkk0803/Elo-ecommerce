@@ -66,19 +66,17 @@ const Header = () => {
               </NavLink>
             </motion.li>
           </ul>
-          <div className="mobile-navbar-btn">
-            <AiOutlineMenu
-              name="menu-outline"
-              className="mobile-nav-icon"
-              onClick={() => setMenuIcon(true)}
-            />
-            <AiOutlineClose
-              name="close-outline"
-              className="mobile-nav-icon close-outline"
-              onClick={() => setMenuIcon(false)}
-            />
-          </div>
         </div>
+        <AiOutlineMenu
+          name="menu-outline"
+          className="menu"
+          onClick={() => setMenuIcon(true)}
+        />
+        <AiOutlineClose
+          name="close-outline"
+          className="close"
+          onClick={() => setMenuIcon(false)}
+        />
       </Nav>
     </MainHeader>
   );
@@ -127,7 +125,12 @@ const Nav = styled.nav`
     cursor: pointer;
     border: none;
   }
-
+  .menu{
+  display:none;
+   }
+  .close{
+  display:none;
+  }
   .mobile-nav-icon[name="close-outline"] {
     display: none;
   }
@@ -135,6 +138,7 @@ const Nav = styled.nav`
   .close-outline {
     display: none;
   }
+
 
   .cart-trolley--link {
     position: relative;
@@ -168,8 +172,15 @@ const Nav = styled.nav`
     font-size: 1.4rem;
     padding: 0.8rem 1.4rem;
   }
-
-  
+ @media (max-width:891px){
+  .menu{
+    display:block;
+    font-size:30px;
+  }
+  .navbar{
+    display:none;
+  }
+ }
   }
 `;
 
